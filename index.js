@@ -6,7 +6,7 @@ const morgan = require('morgan');
 
 app.use(morgan('tiny'))
 app.get('/', (req, res) => {
-    res.send('node 1 project')
+    res.sendfile(__dirname + '/views/index.html')
 })
 
 

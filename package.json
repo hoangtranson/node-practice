@@ -4,7 +4,8 @@
   "description": "node training project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "nodejs"
@@ -16,5 +17,8 @@
     "debug": "^3.1.0",
     "express": "^4.16.3",
     "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
   }
 }
