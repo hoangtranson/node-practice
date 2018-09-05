@@ -13,8 +13,14 @@ function getView(file){
 
 app.use(morgan('tiny'));
 app.use(express.static(path.join(__dirname, '/public')));
+app.set('views', './src/views');
+app.set('view engine', 'pug');
 app.get('/', (req, res) => {
-    res.sendfile(getView('index'))
+    const data = {
+        title: 'my custom title',
+        list: ['a', 'b']
+    }
+    res.render('index', data);
 })
 
 
