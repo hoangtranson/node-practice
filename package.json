@@ -24,5 +24,13 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "nodemon": "^1.18.4"
+  },
+  "nodemonConfig": {
+    "ignore": ["node_modules/**/node_modules"],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
   }
 }
