@@ -14,7 +14,7 @@ function getView(file){
 app.use(morgan('tiny'));
 app.use(express.static(path.join(__dirname, '/public')));
 app.set('views', './src/views');
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
     const data = {
         title: 'my custom title',
